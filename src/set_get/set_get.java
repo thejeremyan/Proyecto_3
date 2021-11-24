@@ -8,6 +8,19 @@ public class set_get {
     private String puntos_destino;
     private String info_lugares;
 
+    private static class SingletonHolder{
+        public static set_get set_get = new set_get();
+    }
+
+    public set_get(){
+        ;
+    }
+
+    public static set_get getInstance(){
+        return SingletonHolder.set_get;
+    }
+
+
 
     /**Metodos de get and set de las variables anteriores**/
     public String getPuntos_salida() {
@@ -36,3 +49,4 @@ public class set_get {
 
 
 }
+/** Invoke object: set_get set_get = set_get.getInstance();**/
