@@ -23,6 +23,7 @@ public class GraphAndDijkstra {
         // Our addEdge method automatically adds Nodes as well.
         // The addNode method is only there for unconnected Nodes,
         // if we wish to add any
+        // Weighted per minutes
         graphWeighted.addEdge(Alajuela, Pozos, 8.55);
         graphWeighted.addEdge(Pozos, Alajuela, 8.55);
 
