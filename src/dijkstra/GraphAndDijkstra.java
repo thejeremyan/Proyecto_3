@@ -189,6 +189,9 @@ public class GraphAndDijkstra {
         graphWeighted.DijkstraShortestPath(/**set_get.getInstance().getPuntos_salida(), set_get.getInstance().getPuntos_destino())**/Sabana, Pavas);
         System.out.println(graphWeighted.DijkstraShortestPath(Alajuela, Coronado));
 
+        set_get.getInstance().setUltimo(graphWeighted.DijkstraShortestPath(Alajuela, Coronado));
+        set_get.getInstance().setUltimo("tono" );
+
         System.out.println("SEBALOL");
     }
 

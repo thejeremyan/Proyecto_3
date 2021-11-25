@@ -1,6 +1,8 @@
 package map;
 
 import dijkstra.GraphAndDijkstra;
+import dijkstra.sebalol;
+
 import set_get.set_get;
 
 public class Panel extends javax.swing.JFrame {
@@ -172,13 +174,18 @@ public class Panel extends javax.swing.JFrame {
     private void boton_destinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_destinoActionPerformed
         // TODO add your handling code here:
 
-        String destino = (String) puntos_destino.getSelectedItem();
-        System.out.println(destino);
-        set_get.getInstance().setPuntos_destino(destino);
+        //String destino = (String) puntos_destino.getSelectedItem();
+        //System.out.println(destino);
+        //set_get.getInstance().setPuntos_destino(destino);
 
-        GraphAndDijkstra grafo = new GraphAndDijkstra();
+        //GraphAndDijkstra grafo = new GraphAndDijkstra();
+
+        sebalol guapo = new sebalol();
+        guapo.manuela();
 
         System.out.println(set_get.getInstance().getUltimo());
+
+        System.out.println("sola");
 
 
     }//GEN-LAST:event_boton_destinoActionPerformed
