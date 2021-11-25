@@ -122,8 +122,9 @@ public class GraphWeighted {
             // reachable node the path between start and end doesn't exist
             // (they aren't connected)
             if (currentNode == null) {
+                String not = "There isn't a path between " + start.name + " and " + end.name;
                 System.out.println("There isn't a path between " + start.name + " and " + end.name);
-                return null;
+                return not;
             }
 
             // If the closest non-visited node is our destination, we want to print the path
@@ -136,7 +137,7 @@ public class GraphWeighted {
                 // It makes no sense to use StringBuilder, since
                 // repeatedly adding to the beginning of the string
                 // defeats the purpose of using StringBuilder
-                String path = end.name;
+                String path = end.name ;
                 while (true) {
                     NodeWeighted parent = changedAt.get(child);
                     if (parent == null) {
@@ -149,10 +150,12 @@ public class GraphWeighted {
                     path = parent.name + " " + path;
                     child = parent;
                 }
+                String salida = "The path with the smallest weight between "
+                        + start.name + " and " + end.name + " is:"+path +"The path costs: " + shortestPathMap.get(end);
                 System.out.println(path);
                 System.out.println("The path costs: " + shortestPathMap.get(end));
-                set_get.getInstance().setUltimo(path);
-                return path;
+                set_get.getInstance().setUltimo(salida);
+                return salida;
             }
             currentNode.visit();
 

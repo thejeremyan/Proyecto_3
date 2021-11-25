@@ -151,21 +151,7 @@ public class Panel extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    private void setBoton_ruta(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_destinoActionPerformed
 
-
-        GraphAndDijkstra grafo = new GraphAndDijkstra();
-
-        grafo.manuel();
-
-        System.out.println("sola");
-        /**grafo.manuel();
-        System.out.println(grafo.manuel());
-        panel_ruta.setText(String.valueOf(grafo));**/
-
-
-
-    }//GEN-LAST:event_boton_destinoActionPerformed
 
 
 
@@ -174,18 +160,15 @@ public class Panel extends javax.swing.JFrame {
     private void boton_destinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_destinoActionPerformed
         // TODO add your handling code here:
 
-        //String destino = (String) puntos_destino.getSelectedItem();
-        //System.out.println(destino);
-        //set_get.getInstance().setPuntos_destino(destino);
-
-        //GraphAndDijkstra grafo = new GraphAndDijkstra();
+        String destino = (String) puntos_destino.getSelectedItem();
+        System.out.println(destino);
+        set_get.getInstance().setPuntos_destino(destino);
 
         sebalol guapo = new sebalol();
         guapo.manuela();
 
-        System.out.println(set_get.getInstance().getUltimo());
+        panel_ruta.setText(set_get.getInstance().getUltimo());
 
-        System.out.println("sola");
 
 
     }//GEN-LAST:event_boton_destinoActionPerformed
@@ -196,6 +179,7 @@ public class Panel extends javax.swing.JFrame {
         String salida = (String) puntos_salida.getSelectedItem();
         System.out.println(salida);
         set_get.getInstance().setPuntos_salida(salida);
+
 
 
 

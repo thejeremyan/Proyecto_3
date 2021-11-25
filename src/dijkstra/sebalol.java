@@ -4,28 +4,43 @@ import set_get.set_get;
 
 public class sebalol {
 
-    public static void main(String[] args) {
-        ;
+    NodeWeighted Alajuela ;
+    NodeWeighted Pozos;
+    NodeWeighted SantaAna ;
+    NodeWeighted Escazu ;
+    NodeWeighted Alajuelita ;
+    NodeWeighted Desamparados ;
+    NodeWeighted Curridabat ;
+    NodeWeighted Zapote ;
+    NodeWeighted SanPedro ;
+    NodeWeighted Coronado ;
+    NodeWeighted Moravia ;
+    NodeWeighted Heredia ;
+    NodeWeighted Belen ;
+    NodeWeighted Pavas ;
+    NodeWeighted Sabana ;
+    GraphWeighted graphWeighted;
+    public void sebalol() {
+
     }
 
     public void manuela(){
-        GraphWeighted graphWeighted = new GraphWeighted(true);
-        NodeWeighted Alajuela = new NodeWeighted(0, "Alajuela");
-        NodeWeighted Pozos = new NodeWeighted(1, "Pozos");
-        NodeWeighted SantaAna = new NodeWeighted(2, "SantaAna");
-        NodeWeighted Escazu = new NodeWeighted(3, "Escazu");
-        NodeWeighted Alajuelita = new NodeWeighted(4, "Alajuelita");
-        NodeWeighted Desamparados = new NodeWeighted(5, "Desamparados");
-        NodeWeighted Curridabat = new NodeWeighted(6, "Curridabat");
-        NodeWeighted Zapote = new NodeWeighted(7, "Zapote");
-        NodeWeighted SanPedro = new NodeWeighted(8, "SanPedro");
-        NodeWeighted Coronado = new NodeWeighted(9, "Coronado");
-        NodeWeighted Moravia = new NodeWeighted(10, "Moravia");
-        NodeWeighted Heredia = new NodeWeighted(11, "Heredia");
-        NodeWeighted Belen = new NodeWeighted(12, "Belen");
-        NodeWeighted Pavas = new NodeWeighted(13, "Pavas");
-        NodeWeighted Sabana = new NodeWeighted(14, "Sabana");
-
+        graphWeighted = new GraphWeighted(true);
+        Alajuela = new NodeWeighted(0, "Alajuela");
+         Pozos = new NodeWeighted(1, "Pozos");
+         SantaAna = new NodeWeighted(2, "SantaAna");
+         Escazu = new NodeWeighted(3, "Escazu");
+         Alajuelita = new NodeWeighted(4, "Alajuelita");
+         Desamparados = new NodeWeighted(5, "Desamparados");
+         Curridabat = new NodeWeighted(6, "Curridabat");
+         Zapote = new NodeWeighted(7, "Zapote");
+         SanPedro = new NodeWeighted(8, "SanPedro");
+         Coronado = new NodeWeighted(9, "Coronado");
+         Moravia = new NodeWeighted(10, "Moravia");
+         Heredia = new NodeWeighted(11, "Heredia");
+         Belen = new NodeWeighted(12, "Belen");
+         Pavas = new NodeWeighted(13, "Pavas");
+         Sabana = new NodeWeighted(14, "Sabana");
 
         // Our addEdge method automatically adds Nodes as well.
         // The addNode method is only there for unconnected Nodes,
@@ -93,13 +108,61 @@ public class sebalol {
 
         graphWeighted.addEdge(Sabana, Pavas, 3);
         graphWeighted.addEdge( Pavas,Sabana, 3);
+        //graphWeighted.DijkstraShortestPath(Alajuela,Escazu);
 
-        graphWeighted.DijkstraShortestPath(/**set_get.getInstance().getPuntos_salida(), set_get.getInstance().getPuntos_destino())**/Sabana, Pavas);
-        System.out.println(graphWeighted.DijkstraShortestPath(Alajuela, Coronado));
+        NodeWeighted salida = StringToNode(set_get.getInstance().getPuntos_salida());
+        NodeWeighted destino = StringToNode(set_get.getInstance().getPuntos_destino());
 
-        set_get.getInstance().setUltimo(graphWeighted.DijkstraShortestPath(Alajuela, Coronado));
-        set_get.getInstance().setUltimo("tono" );
+        set_get.getInstance().setUltimo(graphWeighted.DijkstraShortestPath(salida,destino));
 
-        System.out.println("SEBALOL");
+    }
+    public NodeWeighted StringToNode(String nombre){
+        if (nombre == "Alajuela"){
+            return Alajuela;
+
+        }
+        else if (nombre == "Alajuelita"){
+            return Alajuelita;
+        }
+        else if (nombre == "Belen"){
+            return Belen;
+        }
+        else if (nombre == "Curridabat"){
+            return Curridabat;
+        }
+        else if (nombre == "Desamparados"){
+            return Desamparados;
+        }
+        else if (nombre== "Escazu"){
+            return Escazu;
+        }
+        else if (nombre == "Moravia"){
+            return Moravia;
+        }
+        else if (nombre == "Pavas"){
+            return Pavas;
+        }
+        else if (nombre == "Pozos"){
+            return Pozos;
+        }
+        else if (nombre == "Sabana"){
+            return Sabana;
+        }
+        else if (nombre == "San Pedro"){
+            return SanPedro;
+        }
+        else if (nombre == "Santa Ana"){
+            return SantaAna;
+        }
+        else if (nombre == "Zapote"){
+            return Zapote;
+        }
+        else if (nombre == "Coronado"){
+            return Coronado;
+        }
+        else if (nombre == "Heredia"){
+            return Heredia;
+        }
+        else{return null;}
     }
 }
