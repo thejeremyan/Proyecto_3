@@ -151,7 +151,7 @@ public class GraphWeighted {
                     child = parent;
                 }
                 String salida = "The path with the smallest weight between "
-                        + start.name + " and " + end.name + " is:"+path +"The path costs: " + shortestPathMap.get(end);
+                        + start.name + " and " + end.name + " is: \n "+path +" \n The path costs: \n " + shortestPathMap.get(end);
                 System.out.println(path);
                 System.out.println("The path costs: " + shortestPathMap.get(end));
                 set_get.getInstance().setUltimo(salida);
