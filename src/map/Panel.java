@@ -183,52 +183,106 @@ public class Panel extends javax.swing.JFrame {
         set_get.getInstance().setInfo_lugares(info_Lugar);
 
         if (info_Lugar == "Alajuela"){
-            panel_informacion1.setText("Habitantes:900´000 aprox\nDestacado: Mercado Municipal de Alajuela\nParque: Parque Juan Santamaría" +
-                            "\nMonumentos: Monumento Próspero Fernández\nMuseo: Museo Histórico Cultural Juan Santamaría\nLugar de comida más popular: " +
-                    "El Dorado");
+            panel_informacion1.setText("Habitantes:900´000 aprox\n\nDestacado: Mercado Municipal de Alajuela\n\nParque: Parque Juan Santamaría" +
+                            "\n\nMonumentos: Monumento Próspero Fernández\n\nMuseo: Museo Histórico Cultural Juan Santamaría\n\nLugar de comida más popular: " +
+                    "El Dorado\n\nGasolineras: Cootaxa");
 
         }
         else if (info_Lugar == "Alajuelita"){
-            panel_informacion1.setText("");
+            panel_informacion1.setText("Número de habitantes: 82´00 aprox\n\nParques: Parque Recreativo la Guaria\n\nMonumentos: Virgen inmaculada\n\n" +
+                    "Museos: Castro Art Gallery\n\nLugares de comida más importantes: Fogo Rodizio\n\nGasolineras: Servicentro JSM Alajuelita");
         }
         else if (info_Lugar == "Belen"){
-            panel_informacion1.setText("3");
+            panel_informacion1.setText("Número de habitantes: 23´000 aprox\n\nLugar destacado: Cariari Country Club\n\nParques: Parque Central Nicolás Ulloa" +
+                    "Monumentos: Templo de San José\n\nMuseos: Museo Nacional\n\nLugares de comida más importantes: II Cavalino\n\nGasolineras: Servicentro Sheyza");
         }
         else if (info_Lugar == "Curridabat"){
-            panel_informacion1.setText("4");
+            panel_informacion1.setText("Número de habitantes: 41´000 aprox\n\n" +
+                    "Lugar destacado: Multiplaza del Este\n\n" +
+                    "Parques: Parque del recuerdo\n\n" +
+                    "Monumentos: Monumento en Parque de Curridabat\n\n" +
+                    "Museos: Museo de la carreta\n\n" +
+                    "Lugares de comida más importantes: Crepería Dulce Antojo\n\n" +
+                    "Gasolineras: Gas LP EL Ranchito");
         }
         else if (info_Lugar == "Desamparados"){
-            panel_informacion1.setText("5");
+            panel_informacion1.setText("Número de habitantes: 123´000 aprox\n\n" +
+                    "Lugar destacado: Parque Acuático Cascada de Fuego\n\n" +
+                    "Parques: Parque Centenario\n\n" +
+                    "Monumentos: Mariposario Spirogyra\n\n " +
+                    "Museos: Museo de la Carreta\n\n" +
+                    "Lugares de comida más importantes: Soda Heidy y Yoguis\n\n " +
+                    "Gasolineras: Metropoli gas LP Blueflame");
         }
         else if (info_Lugar == "Escazu"){
-            panel_informacion1.setText("6");
+            panel_informacion1.setText("Número de habitantes: 15´000 aprox\n\n" +
+                    "Lugar destacado: Multiplaza Escazú\n\n" +
+                    "Parques: Parque Central de Escazú\n\n" +
+                    "Monumentos: Monumento al Boyero\n\n" +
+                    "Museos: Taller de Escultura IR\n\n" +
+                    "Lugares de comida más importantes: La Posada de las Brujas\n\n" +
+                    "Gasolineras: Gasolinera La Favorita");
         }
         else if (info_Lugar == "Moravia"){
-            panel_informacion1.setText("7");
+            panel_informacion1.setText("Número de habitantes: 63´000 aprox\n\n" +
+                    "Lugar destacado: Lincoln Plaza\n\n" +
+                    "Parques: Parque Central Abraham Lincoln\n\n" +
+                    "Monumentos: Parque Ecológico Itarar\n\n" +
+                    "Museos: Museo Indígena\n\n" +
+                    "Lugares de comida más importantes: Pizzería El Cubano \n\n" +
+                    "Gasolineras: Delta Moravia");
         }
         else if (info_Lugar == "Pavas"){
-            panel_informacion1.setText("8");
+            panel_informacion1.setText("Número de habitantes: 75´000 aprox\n\nLugar destacado: Embajada de los Estados Unidos de América\n\n" +
+                    "Parques: Parque Bellavista\n\nAeropuerto: Aeropuerto Internacional Tobías Bolaños Palma\n\nMuseos: Museo Judío\n\n" +
+                    "Lugares de comida más importantes: Restaurante Furca\n\nGasolineras: Delta Rohrmoser");
         }
         else if (info_Lugar == "Pozos"){
-            panel_informacion1.setText("9");
+            panel_informacion1.setText("Número de habitantes: 16´000 aprox\n\nLugares destacados: Centro de Conservación Santa Ana"+
+                    "Parques: Parque Bosques de Santa Ana\n\nMonumentos: Refugio Animal de Costa Rica\n\nMuseos:Galeria de Antiguedades\n\n" +
+                    "Lugares de comida más importantes: La Casona de Laly\n\nGasolineras: Servicentro Pozos");
         }
         else if (info_Lugar == "Sabana"){
-            panel_informacion1.setText("10");
+            panel_informacion1.setText("Número de habitantes: 5’000\n\n" +
+                    "Lugar destacado: Estadio Nacional de Costa Rica\n\n" +
+                    "Parques: Parque La Sabana\n\n" +
+                    "Monumentos: Estatua León Cortés\n\n" +
+                    "Museos: Museo de Arte Costarricense\n\n" +
+                    "Lugares de comida más importantes: Soda Tapia\n\n" +
+                    "Gasolineras: Bomba La Salle");
         }
         else if (info_Lugar == "San Pedro"){
-            panel_informacion1.setText("11");
+            panel_informacion1.setText("Número de habitantes: 26´000 aprox\n\nLugar destacado: Mall San Pedro, UCR\n\nParques: Parque John F. kennedy\n\n" +
+                    "Monumentos: La Fuente de la Hispanidad\n\nMuseos: UCR Museo de Insectos\n\nLugares de comida más importantes: Café 80´s San Pedro\n\n" +
+                    "Gasolineras: Bomba San Pedro");
         }
         else if (info_Lugar == "Santa Ana"){
-            panel_informacion1.setText("12");
+            panel_informacion1.setText("Número de habitantes: 13´000 aprox\n\nLugar destacado: Santa Ana Town Center\n\nParques:" +
+                    "Parque Recreativo y Deportivo de Santa Ana\n\nHotel destacado: Hilton Garden INN Santa Ana SJO\n\nLugares de comida más importantes: " +
+                    "Restaurante El Jardín\n\nGasolineras: Servicentro JSM Santa Ana");
         }
         else if (info_Lugar == "Zapote"){
-            panel_informacion1.setText("13");
+            panel_informacion1.setText("Número de habitantes: 20´000 aprox\n\n" +
+                    "Lugar destacado: Parroquia Nuestra Señora de Ujarrás\n\n" +
+                    "Parques: Parque Central de Zapote\n\n" +
+                    "Monumentos: Rotonda de las Garantías Sociales\n\n" +
+                    "Museos: Plaza de Toros Zapote\n\n" +
+                    "Lugares de comida más importantes: Limongi´s Resto Bar\n\n" +
+                    "Gasolineras: Bomba La Pista");
         }
         else if (info_Lugar == "Coronado"){
-            panel_informacion1.setText("14");
+            panel_informacion1.setText("Número de habitantes: 36´000 aprox\n\n" +
+                    "Lugar destacado: Delicias Solamavi (Las Peludas)\n\n" +
+                    "Parques: Parque de Vázquez de Coronado\n\n" +
+                    "Monumentos: Parroquia de San Isidro Labrador\n\n" +
+                    "Museos: UCR Instituto Clodomiro Picado\n\n" +
+                    "Lugares de comida más importantes: El molino Central\n\n" +
+                    "Gasolineras: El trapiche");
         }
         else if (info_Lugar == "Heredia"){
-            panel_informacion1.setText("");
+            panel_informacion1.setText("Número de habitantes: 140´000 aprox\n\nLugar destacado: Palacio de los Deportes\n\nParques: Parque Alfredo González Flores\n\n" +
+                    "Monumentos: Monumento Parque el Carmen\n\nMuseos: Centro de la Cultura Herediana Omar Dengo\n\nLugares de comida más importantes: " +
+                    "Carl´s Jr.\n\nGasolineras: Servicentro Santa Lucía");
         }
 
 
