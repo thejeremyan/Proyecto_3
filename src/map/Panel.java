@@ -1,5 +1,6 @@
 package map;
 
+import dijkstra.GraphAndDijkstra;
 import set_get.set_get;
 
 public class Panel extends javax.swing.JFrame {
@@ -148,6 +149,21 @@ public class Panel extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    private void setBoton_ruta(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_destinoActionPerformed
+
+
+        GraphAndDijkstra grafo = new GraphAndDijkstra();
+
+        grafo.manuel();
+
+        System.out.println("sola");
+        /**grafo.manuel();
+        System.out.println(grafo.manuel());
+        panel_ruta.setText(String.valueOf(grafo));**/
+
+
+
+    }//GEN-LAST:event_boton_destinoActionPerformed
 
 
 
@@ -159,6 +175,10 @@ public class Panel extends javax.swing.JFrame {
         String destino = (String) puntos_destino.getSelectedItem();
         System.out.println(destino);
         set_get.getInstance().setPuntos_destino(destino);
+
+        GraphAndDijkstra grafo = new GraphAndDijkstra();
+
+        System.out.println(set_get.getInstance().getUltimo());
 
 
     }//GEN-LAST:event_boton_destinoActionPerformed

@@ -8,6 +8,16 @@ public class set_get {
     private String puntos_destino;
     private String info_lugares;
 
+    public String getUltimo() {
+        return ultimo;
+    }
+
+    public void setUltimo(String ultimo) {
+        this.ultimo = ultimo;
+    }
+
+    private String ultimo;
+
     private static class SingletonHolder{
         public static set_get set_get = new set_get();
     }

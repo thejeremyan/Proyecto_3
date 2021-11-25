@@ -2,6 +2,9 @@ package dijkstra;
 
 import java.util.*;
 
+import set_get.set_get;
+
+
 public class GraphWeighted {
     private Set<NodeWeighted> nodes;
     private boolean directed;
@@ -148,6 +151,7 @@ public class GraphWeighted {
                 }
                 System.out.println(path);
                 System.out.println("The path costs: " + shortestPathMap.get(end));
+                set_get.getInstance().setUltimo(path);
                 return path;
             }
             currentNode.visit();
