@@ -182,6 +182,58 @@ public class Panel extends javax.swing.JFrame {
         System.out.println(info_Lugar);
         set_get.getInstance().setInfo_lugares(info_Lugar);
 
+        if (info_Lugar == "Alajuela"){
+            panel_informacion1.setText("Habitantes:900´000 aprox\nDestacado: Mercado Municipal de Alajuela\nParque: Parque Juan Santamaría" +
+                            "\nMonumentos: Monumento Próspero Fernández\nMuseo: Museo Histórico Cultural Juan Santamaría\nLugar de comida más popular: " +
+                    "El Dorado");
+
+        }
+        else if (info_Lugar == "Alajuelita"){
+            panel_informacion1.setText("");
+        }
+        else if (info_Lugar == "Belen"){
+            panel_informacion1.setText("3");
+        }
+        else if (info_Lugar == "Curridabat"){
+            panel_informacion1.setText("4");
+        }
+        else if (info_Lugar == "Desamparados"){
+            panel_informacion1.setText("5");
+        }
+        else if (info_Lugar == "Escazu"){
+            panel_informacion1.setText("6");
+        }
+        else if (info_Lugar == "Moravia"){
+            panel_informacion1.setText("7");
+        }
+        else if (info_Lugar == "Pavas"){
+            panel_informacion1.setText("8");
+        }
+        else if (info_Lugar == "Pozos"){
+            panel_informacion1.setText("9");
+        }
+        else if (info_Lugar == "Sabana"){
+            panel_informacion1.setText("10");
+        }
+        else if (info_Lugar == "San Pedro"){
+            panel_informacion1.setText("11");
+        }
+        else if (info_Lugar == "Santa Ana"){
+            panel_informacion1.setText("12");
+        }
+        else if (info_Lugar == "Zapote"){
+            panel_informacion1.setText("13");
+        }
+        else if (info_Lugar == "Coronado"){
+            panel_informacion1.setText("14");
+        }
+        else if (info_Lugar == "Heredia"){
+            panel_informacion1.setText("");
+        }
+
+
+
+
     }//GEN-LAST:event_boton_informacionActionPerformed
 
 
